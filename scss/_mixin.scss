@@ -1,0 +1,12 @@
+
+@mixin fontSize($size , $height) {
+  font-size: $size;
+  line-height: $height;
+}
+@mixin width($width , $height) {
+  width: $width;
+  height: $height;
+}
+@mixin center {
+  margin: 0 auto;
+}
