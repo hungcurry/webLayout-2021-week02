@@ -116,10 +116,33 @@ a {
   line-height: 106px;
 }
 
+.txt-white {
+  color: #fff;
+}
+
 .title {
   font-size: 64px;
   line-height: 84px;
   text-align: center;
+}
+
+.picture {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.picture .picture＿item {
+  width: 100%;
+}
+
+.picture img {
+  width: 100%;
+}
+
+.brand .brandGroup, .works .worksGroup {
+  font-size: 20px;
+  font-style: normal;
 }
 
 /*-------------------------*/
@@ -154,10 +177,6 @@ a {
 ---------------------------*/
 .about {
   padding: 56px 0;
-}
-
-.about .txt {
-  text-align: center;
 }
 
 .about .title {
@@ -197,9 +216,9 @@ a {
   position: absolute;
   top: 50%;
   left: -38px;
-  border-radius: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -207,30 +226,66 @@ a {
 }
 
 /*-------------------------*/
+/* brand
+---------------------------*/
+.brand {
+  padding: 56px 0 120px 0;
+}
+
+.brand .title {
+  margin-bottom: 12px;
+}
+
+.brand .brandGroup {
+  margin-bottom: 68px;
+}
+
+@media screen and (min-width: 768px) {
+  .brand .brandPic＿item:first-child {
+    width: auto;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .brand .brandPic＿item:nth-child(2),
+  .brand .brandPic＿item:nth-child(3) {
+    max-width: calc(50% - 12px);
+  }
+}
+
+/*-------------------------*/
+/* works
+---------------------------*/
+.works {
+  padding: 56px 0  96px 0;
+}
+
+.works .worksGroup {
+  margin-bottom: 56px;
+}
+
+@media screen and (min-width: 768px) {
+  .works .worksPic＿item {
+    max-width: calc(33.333% - 12px);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .works .worksPic＿item:nth-child(4), .works .worksPic＿item:nth-child(5) {
+    max-width: calc(50% - 12px);
+  }
+}
+
+.works .worksPic＿item p {
+  font-size: 20px;
+  color: #000;
+  font-style: normal;
+}
+
+/*-------------------------*/
 /* footer
 ---------------------------*/
-.footer .subTitle-white {
-  margin-bottom: 32px;
-}
-
-.footer .content {
-  font-weight: 300;
-}
-
-.footer a {
-  color: #fff;
-  word-break: break-all;
-}
-
-.footer .icon-group {
-  display: flex;
-  justify-content: center;
-}
-
-.footer .icon-group li + li {
-  margin-left: 24px;
-}
-
 /*-------------------------*/
 /* utilities
 ---------------------------*/
@@ -242,8 +297,16 @@ a {
   font-weight: 900;
 }
 
+.font-normal {
+  font-style: normal;
+}
+
 .font-italic {
   font-style: italic;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .bg-white {
@@ -300,6 +363,10 @@ a {
 
 .mb-5 {
   margin-bottom: 40px !important;
+}
+
+.mb-6 {
+  margin-bottom: 48px !important;
 }
 
 .mb-9 {
