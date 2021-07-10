@@ -1,6 +1,6 @@
 
 * {
-	outline: 1px solid red;
+	// outline: 1px solid red;
 }
 .container{
 	@include center;
@@ -47,7 +47,6 @@
 	font-size: 20px;
 	font-style: normal;
 }
-
 /*-------------------------*/
 /* header
 ---------------------------*/
@@ -98,18 +97,22 @@
 		position: relative;
 		margin-bottom: 28px;
 		&:before{
-			@include width(22px , 22px);
+			@include width(16px , 16px);
 			content:"";
 			background-color: $primary;
 			position: absolute;
 			top: 50%;
-			left: -38px;
+			left: -22px;
 			transform: translateY(-50%);
 			border-radius: 50%;
 			-webkit-border-radius: 50%;
 			-moz-border-radius: 50%;
 			-ms-border-radius: 50%;
 			-o-border-radius: 50%;
+			@media screen and (min-width:768px){
+				@include width(22px , 22px);
+				left: -38px;
+			}
 		}
 	}
 }
@@ -168,7 +171,10 @@
 /* footer
 ---------------------------*/
 .footer{
-
+	padding: 64px 0  56px 0;
+	a{
+		color: $white;
+	}
 }
 /*-------------------------*/
 /* utilities
