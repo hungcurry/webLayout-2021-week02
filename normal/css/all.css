@@ -60,7 +60,7 @@ table {
 }
 
 body {
-  font-family: 'Roboto', sans-serif !important;
+  font-family: 'Roboto', sans-serif;
   color: #000;
   font-size: 20px;
   line-height: 36px;
@@ -81,16 +81,6 @@ img {
   display: block;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-  margin: 0;
-}
-
-ul, li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
 a {
   text-decoration: none;
 }
@@ -100,9 +90,6 @@ a {
   max-width: 1200px;
   height: 100%;
   padding: 0 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 @media screen and (min-width: 1024px) {
@@ -160,9 +147,15 @@ a {
   color: #fff;
 }
 
+.header .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (min-width: 768px) {
   .header {
-    height: 758px;
+    height: 958px;
   }
 }
 
@@ -298,7 +291,7 @@ a {
 /* footer
 ---------------------------*/
 .footer {
-  padding: 64px 0  56px 0;
+  padding: 64px 0;
 }
 
 .footer a {

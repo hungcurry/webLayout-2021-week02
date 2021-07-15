@@ -7,9 +7,6 @@
   max-width: 1200px;
   height: 100%;
   padding: 0 15px;
-	display: flex;
-  justify-content:center;
-  align-items: center;
 	@media screen and (min-width:1024px){
 		&{
 			padding: 0 ;
@@ -57,8 +54,13 @@
   background-repeat: no-repeat;
   background-size: cover;
 	color:$white;
+	.container{
+		display: flex;
+		justify-content:center;
+		align-items: center;
+	}
 	@media screen and (min-width:768px){
-		height: 758px;
+		height: 958px;
 	}	
 	.socialGroup{
 		display: flex;
@@ -171,7 +173,7 @@
 /* footer
 ---------------------------*/
 .footer{
-	padding: 64px 0  56px 0;
+	padding: 64px 0;
 	a{
 		color: $white;
 	}
